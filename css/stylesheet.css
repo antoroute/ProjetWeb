@@ -4,20 +4,9 @@ header {
   z-index: 0;
 }
 
-#sticky-header {
-  position: absolute;
-  top: 220px;
-  width: 100%;
-  height: 60px;
-  background: grey;
-  z-index: 0;
-  visibility: visible;
-}
-
 .Titre h1 {
-  width: 100%;
-  height: 200px;
-  background-color: #292f36;
+  max-width: 100%;
+  background-color: #121518;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -25,7 +14,15 @@ header {
   color: #fff;
   line-height: 200px;
 }
-
+#sticky-header {
+  position: absolute;
+  top: 220px;
+  width: 100%;
+  height: 60px;
+  background: rgb(39, 37, 37);
+  z-index: 0;
+  visibility: visible;
+}
 header nav ul {
   list-style-type: none;
   margin: 0 2% auto 0;
@@ -47,7 +44,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
   text-decoration: none;
-  color: #3366cc;
+  color: #dd35cf;
 }
 
 
@@ -90,7 +87,8 @@ p img {
 
 
 .footer {
-  position: relative;
+  position: absolute;
+  bottom: 0px;
   padding-top: 45px;
   background: #121518;
 }
