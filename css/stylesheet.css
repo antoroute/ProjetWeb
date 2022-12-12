@@ -148,12 +148,25 @@ p img {
   box-shadow: none;
 }
 
+.col-md-6 {
+  display: flex;
+  margin-left: 150px;
+  margin-right: 150px;
+  justify-content: center;
+}
+.col-md-6 .row{
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 .footer .footer-about,
 .footer .footer-link,
 .footer .footer-contact {
   position: relative;
   margin-bottom: 45px;
   color: #dddddd;
+  text-align: center;
 }
 
 .footer .footer-about h3,
