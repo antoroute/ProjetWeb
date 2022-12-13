@@ -1,4 +1,5 @@
 
+/*header*/
 header {
   position: static;
   top: 0px;
@@ -17,45 +18,67 @@ header {
   color: #fff;
   z-index: 2;
 }
+
 #sticky-header {
   position: absolute;
   top: 220px;
   width: 100%;
-  margin-left: 0;
-  height: 60px;
+  text-align: center;
+  padding-left: 0;
+  margin: 0 2% auto 0;
   background: rgb(39, 37, 37);
   z-index: 3;
 }
-header nav ul {
-  list-style-type: none;
-  margin: 0 2% auto 0;
-  padding-left: 0;
-  text-align: center;
-  max-width: 100%;
-}
 
-header nav ul li {
+#sticky-header li {
   display: inline-block;
+  text-align: center;
   line-height: 60px;
-  margin-left: 50px;
+  margin-left: 6em;
 }
 
-header nav ul li a {
+#sticky-header li a {
   text-decoration: none;
   color: #a9abae;
 }
 
-header nav ul li a:hover {
+#sticky-header li a:hover {
   text-decoration: none;
   color: #dd35cf;
 }
 
+/* header sticky-header deroulant*/
+/* ----------------------------------------- */
+/* #sticky-header */
+#sticky-header ul li:hover {
+  background-size: cover;
+  background-color: blue;
+}
+
+#sticky-header .sous{
+  background-color: rgb(39, 37, 37);
+	position: absolute;
+	visibility: hidden;
+	z-index: 10;
+}
+
+#sticky-header li:hover .sous{
+	visibility: visible;
+}
+
+#sticky-header .sous li {
+  float: none;
+  display: block;
+}
 
 
 
+/* ----------------------------------------- */
+
+/* Body */
 
 body {
- 
+
   color: #292f36;
   font-family: helvetica;
   line-height: 1.6;
@@ -85,10 +108,9 @@ p img {
   max-width: 100%;
 }
 
+/* ----------------------------------------- */
 
-
-
-
+/* footer */
 
 .footer {
   position: static;
@@ -122,7 +144,9 @@ p img {
 }
 
 .footer .newsletter input {
+  display: flex;
   height: 50px;
+  width: 285px;
   border: 2px solid #cdcdcd;
 }
 
@@ -153,13 +177,14 @@ p img {
 
 .col-md-6 {
   display: flex;
-  margin:0 5em;
+  margin: 0 5em;
   justify-content: center;
 }
-.col-md-6 .row{
+
+.col-md-6 .row {
   display: flex;
   justify-content: center;
-  margin:auto;
+  margin: auto;
 }
 
 .footer .footer-about,
@@ -173,7 +198,7 @@ p img {
 
 .footer .footer-about h3,
 .footer .footer-link h3,
-.footer .footer-contact h3{
+.footer .footer-contact h3 {
   position: relative;
   margin-bottom: 20px;
   font-size: 22px;
@@ -281,9 +306,12 @@ p img {
 }
 
 @media (max-width: 768px) {
+
   .footer .copyright p,
   .footer .copyright .col-md-6:last-child p {
     margin: 5px 0;
     text-align: center;
   }
 }
+
+/* ----------------------------------------- */
