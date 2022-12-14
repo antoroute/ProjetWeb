@@ -39,67 +39,50 @@
     </header>
 
     <main>
-        <section>
-            <h1>
-                Ajouter Khôlle
-            </h1>
-        </section>
-        <section>
-            <form method="post" name="newKholle" class="boxKholle" id="newKholle" onsubmit="return false">
-                <ul><strong>Filière 2eme : </strong>
-                    <select name="filiere" size=1>
-                        <option>MP</option>
-                        <option>MPI</option>
-                        <option>PC</option>
-                        <option>PSI</option>
-                        <option>PT</option>
-                        <option>TSI</option>
-                    </select>
-                </ul>
-                <ul><strong>Filière 1er : </strong>
-                    <select name="filiere" size=1>
-                        <option>MPSI</option>
-                        <option>PCSI</option>
-                        <option>MPII</option>
-                        <option>PTSI</option>
-                    </select></ul>
+        <div>
+            <ul><strong>Filière: </strong>
+                <select name="filiere" size=1>
+                    <option>MPSI</option>
+                    <option>PCSI</option>
+                    <option>MPII</option>
+                    <option>PTSI</option>
+                    <option>MP</option>
+                    <option>MPI</option>
+                    <option>PC</option>
+                    <option>PSI</option>
+                    <option>PT</option>
+                    <option>TSI</option>
+                </select>
+            </ul>
+            <ul><strong>Matiere :</strong>
+                <select name="filiere" size=1>
+                    <option>Mathématique</option>
+                    <option>Physique</option>
+                    <option>Chimie</option>
+                    <option>SI</option>
+                </select>
+            </ul>
 
-                <ul><strong>Matiere :</strong>
-                    <select name="filiere" size=1>
-                        <option>Mathématique</option>
-                        <option>Physique</option>
-                        <option>Chimie</option>
-                        <option>SI</option>
-                    </select></ul>
+            <ul><button type="submit" class="btn" onclick="ajouter()">Rechercher</button>
+            </ul>
+        </div>
+        <div class="box">
+            <table class="datatable">
+                <thead>
+                    <tr>
+                        <th>Chapitre</th>
+                        <th>Enoncé & Correction</th>
+                        <th>Commentaire</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-                <ul><strong>Chapitre :</strong>
-                    <input type="text" id="chapitre" name="chapitre" size="25" placeholder="Nom du Chapitre" required>
-                </ul>
-                <ul><strong>Enoncé :</strong>
-                    <input type="file" id="enonce" name="enonce" size="25" accept="image/png, image/jpeg" required>
-                </ul>
-                <ul><strong>Commentaire :</strong>
-                    <input type="text" id="commentaire" name="commentaire" size="25"
-                        placeholder="Commentaire de l'examinateur">
-                </ul>
-                <ul><strong>Correction :</strong>
-                    <input type="file" id="correction" name="correction" size="25" accept="image/png, image/jpeg">
-                </ul>
-                <ul><button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
-                    <button type="button" class="btn" onclick="supprimer()">Supprimer</button>
-                </ul>
-
-
-            </form>
-        </section>
-        <section class="content">
-            <article>
-
-            </article>
-        </section>
-
+                </tbody>
+            </table>
+        </div>
 
     </main>
+
     <footer>
         <div class="footer">
             <div class="container">
