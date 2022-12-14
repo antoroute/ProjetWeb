@@ -73,17 +73,16 @@
                     </select></ul>
 
                 <ul><strong>Chapitre :</strong>
-                    <input type="text" id="tache" name="tache" size="25" placeholder="Nom du Chapitre" required>
+                    <input type="text" id="chapitre" name="chapitre" size="25" placeholder="Nom du Chapitre" required>
                 </ul>
                 <ul><strong>Enoncé :</strong>
-                    <input type="text" id="tache" name="tache" size="25" placeholder="Photo ou pdf / fichier" required>
+                    <input type="file" id="enonce" name="enonce" size="25" accept="image/png, image/jpeg" required>
                 </ul>
                 <ul><strong>Commentaire :</strong>
-                    <input type="text" id="tache" name="tache" size="25" placeholder="Commentaire de l'examinateur"
-                        required>
+                    <input type="text" id="commentaire" name="commentaire" size="25" placeholder="Commentaire de l'examinateur">
                 </ul>
-                <ul><strong>Enoncé :</strong>
-                    <input type="text" id="tache" name="tache" size="25" placeholder="Photo ou pdf / fichier" required>
+                <ul><strong>Correction :</strong>
+                    <input type="file" id="correction" name="correction" size="25" accept="image/png, image/jpeg">
                 </ul>
                 <ul><button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
                     <button type="button" class="btn" onclick="supprimer()">Supprimer</button>
