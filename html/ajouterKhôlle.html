@@ -46,8 +46,12 @@
         </section>
         <section>
             <form method="post" name="newKholle" class="boxKholle" id="newKholle" onsubmit="return false">
-                <ul><strong>Filière 2eme : </strong>
+                <ul><strong>Filière : </strong>
                     <select name="filiere" size=1>
+                        <option>MPSI</option>
+                        <option>PCSI</option>
+                        <option>MPII</option>
+                        <option>PTSI</option>
                         <option>MP</option>
                         <option>MPI</option>
                         <option>PC</option>
@@ -56,21 +60,15 @@
                         <option>TSI</option>
                     </select>
                 </ul>
-                <ul><strong>Filière 1er : </strong>
-                    <select name="filiere" size=1>
-                        <option>MPSI</option>
-                        <option>PCSI</option>
-                        <option>MPII</option>
-                        <option>PTSI</option>
-                    </select></ul>
 
                 <ul><strong>Matiere :</strong>
-                    <select name="filiere" size=1>
+                    <select name="matiere" size=1>
                         <option>Mathématique</option>
                         <option>Physique</option>
                         <option>Chimie</option>
                         <option>SI</option>
-                    </select></ul>
+                    </select>
+                </ul>
 
                 <ul><strong>Chapitre :</strong>
                     <input type="text" id="chapitre" name="chapitre" size="25" placeholder="Nom du Chapitre" required>
@@ -83,13 +81,11 @@
                         placeholder="Commentaire de l'examinateur">
                 </ul>
                 <ul><strong>Correction :</strong>
-                    <input type="file" id="correction" name="correction" size="25" accept="image/png, image/jpeg">
+                    <input type="file" id="correction" name="correction" size="25" accept="image/*,.pdf" multiple>
                 </ul>
-                <ul><button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
-                    <button type="button" class="btn" onclick="supprimer()">Supprimer</button>
+                <ul>
+                    <button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
                 </ul>
-
-
             </form>
         </section>
         <section class="content">
