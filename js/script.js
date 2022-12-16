@@ -1,3 +1,4 @@
+
 window.addEventListener('scroll',()=>{
     const{scrollTop}=document.documentElement;
     var sticky=document.getElementById("sticky-header");
@@ -91,3 +92,26 @@ function ajouter(){
 };
 
 
+function mettreDansJson(){
+    const kholle = document.forms.newKholle; 
+
+    const filiereSaisi = kholle.elements.filiere.value;
+    const matiereSaisie = kholle.elements.matiere.value;
+    const chapitreSaisie = kholle.elements.chapitre.value;
+    const enonceSaisi = kholle.elements.enonce.value;
+    const commentaireSaisi = kholle.elements.commentaire.value;
+    const correctionSaisi = kholle.elements.correction.value;
+
+    //
+    // const myData = JSON.parse(readFileSync('../json/gallery.json','utf-8'));
+    // 
+    fetch("../json/gallery.json")
+        .then(res=>res.json())
+        .then(data=> {    
+            console.log(filiereSaisi);
+
+            console.log(data[0].filiereSaisi);
+        })
+    
+    
+}
