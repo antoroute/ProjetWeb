@@ -1,62 +1,62 @@
-[{
+{
     "MPSI": {
-        "Mathématique": {},
-        "Physique": {},
-        "Chimie": {},
-        "SI": {}
+        "Mathématique": [],
+        "Physique": [],
+        "Chimie": [],
+        "SI": []
     },
     "PCSI": {
-        "Mathématique": {},
-        "Physique": {},
-        "Chimie": {},
-        "SI": {}
+        "Mathématique": [],
+        "Physique": [],
+        "Chimie": [],
+        "SI": []
     },
     "MPII": {
-        "Mathématique": {},
-        "Physique": {},
-        "Chimie": {},
-        "SI": {}
+        "Mathématique": [],
+        "Physique": [],
+        "Chimie": [],
+        "SI": []
     },
     "PTSI": {
-        "Mathématique": {},
-        "Physique": {},
-        "Chimie": {},
-        "SI": {}
+        "Mathématique": [],
+        "Physique": [],
+        "Chimie": [],
+        "SI": []
     },
     "MP": {
-        "Mathématique": {},
-        "Physique": {},
-        "Chimie": {},
-        "SI": {}
+        "Mathématique": [],
+        "Physique": [],
+        "Chimie": [],
+        "SI": []
     },
     "MPI": {
-        "Mathématique": {},
-        "Physique": {},
-        "Chimie": {},
-        "SI": {}
+        "Mathématique": [],
+        "Physique": [],
+        "Chimie": [],
+        "SI": []
     },
     "PC": {
-        "Mathématique": {},
-        "Physique": {},
-        "Chimie": {},
-        "SI": {}
+        "Mathématique": [],
+        "Physique": [],
+        "Chimie": [],
+        "SI": []
     },
     "PSI": {
-        "Mathématique": {},
-        "Physique": {},
-        "Chimie": {},
-        "SI": {}
+        "Mathématique": [],
+        "Physique": [],
+        "Chimie": [],
+        "SI": []
     },
     "PT": {
-        "Mathématique": {},
-        "Physique": {},
-        "Chimie": {},
-        "SI": {}
+        "Mathématique": [],
+        "Physique": [],
+        "Chimie": [],
+        "SI": []
     },
     "TSI": {
-        "Mathématique": {},
-        "Physique": {},
-        "Chimie": {},
-        "SI": {}
+        "Mathématique": [],
+        "Physique": [],
+        "Chimie": [],
+        "SI": []
     }
-}]
+}

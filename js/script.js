@@ -91,7 +91,6 @@ function ajouter(){
     })
 };
 
-
 function mettreDansJson(){
     const kholle = document.forms.newKholle; 
 
@@ -101,17 +100,37 @@ function mettreDansJson(){
     const enonceSaisi = kholle.elements.enonce.value;
     const commentaireSaisi = kholle.elements.commentaire.value;
     const correctionSaisi = kholle.elements.correction.value;
-
     //
     // const myData = JSON.parse(readFileSync('../json/gallery.json','utf-8'));
     // 
     fetch("../json/gallery.json")
         .then(res=>res.json())
         .then(data=> {    
-            console.log(filiereSaisi);
+            console.log(data);
+            var myData = data;
+            
+            //console.log(myData);
+            const nouvelleKholle={"chapitre": chapitreSaisie,
+                                    "enonce":enonceSaisi,
+                                    "commentaire":commentaireSaisi,
+                                    "correction":correctionSaisi
+                                };
+            // const nouvelleKholleString = JSON.stringify(nouvelleKholle);
+            // console.log(typeof(nouvelleKholleString));
+            myData[filiereSaisi][matiereSaisie].push(nouvelleKholle);
+            // var newData = data.push(JSON.stringify(nouvelleKholle));
+            // console.log(newData);
+            console.log(myData);
+            console.log(myData[filiereSaisi][matiereSaisie][0].commentaire);
+            //filehandle.writeFile("../json/gallery.json",myData);
+        });
 
-            console.log(data[0].filiereSaisi);
-        })
-    
-    
+}
+
+function test(){
+    fetch("../json/gallery.json")
+        .then(res=>res.json())
+        .then(data=> {  
+            console.log(data);
+        });
 }
