@@ -6,7 +6,7 @@
     <title> Pas encore deefinit </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="../js/script.js"></script>
-    <script src = "../json/gallery.json"></script>
+    <script src="../json/gallery.json"></script>
     <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/a7e75cea4f.js" crossorigin="anonymous"></script>
 </head>
@@ -21,17 +21,10 @@
                 <li><a href="/html/index.html">Home</a>
                     <ul class="sous">
                         <li><a href="ajouterKhôlle.html">Ajouter Khôlle</a></li>
-                        <li><a href="#">Supprimer tâche</a></li>
-                        <li><a href="#">Mettre à jour tâche</a></li>
+                        <li><a href="#">Mettre à jour Khôlle</a></li>
                     </ul>
                 </li>
-                <li><a href="/html/aPropos.html">About</a>
-                    <ul class="sous">
-                        <li><a href="ajouterKhôlle.html">Ajouter Khôlle</a></li>
-                        <li><a href="#">Supprimer tâche</a></li>
-                        <li><a href="#">Mettre à jour tâche</a></li>
-                    </ul>
-                </li>
+                <li><a href="/html/aPropos.html">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
@@ -85,15 +78,28 @@
                     <input type="file" id="correction" name="correction" size="25" accept="image/*,.pdf" multiple>
                 </ul>
                 <ul>
-                    <button type="submit" class="btn" onclick="mettreDansJson(),test()">Ajouter</button>
+                    <button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
                 </ul>
             </form>
-        </section>
-        <section class="content">
-            <article>
 
-            </article>
         </section>
+
+        <div class="box">
+            <table class="datatable">
+                <thead>
+                    <tr>
+                        <th>Filière</th>
+                        <th>Matiere</th>
+                        <th>Chapitre</th>
+                        <th>Enoncé & Correction</th>
+                        <th>Commentaire</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
 
 
     </main>

@@ -183,6 +183,7 @@ main .box {
   text-align: center;
   padding: 24px;
   flex-wrap: wrap;
+  max-width: 150px;
 }
 
 .datatable tr:not(:last-child) td,

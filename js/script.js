@@ -52,7 +52,7 @@ function pushKholle(uneKholle){
 
 function supprimer(){
     /*const table = document.querySelector('.datatable tbody');*/
-    const table = document.querySelector('.content article');
+    const table = document.querySelector('.box tbody');
     while(table.firstChild){
         table.firstChild.remove();
     };
@@ -68,22 +68,24 @@ function ajouter(){
         const filiere=document.createElement("td");
         const matiere=document.createElement("td");
         const chapitre=document.createElement("td");
-        const enonce=document.createElement("td");
+        //const enonce=document.createElement("td");
         const commentaire=document.createElement("td");
-        const correction=document.createElement("td");
+        //const correction=document.createElement("td");
+        const enonceCorrection=document.createElement("td");
 
         filiere.textContent = uneKholle.filiere.innerText;
         matiere.textContent = uneKholle.matiere.innerText;
         chapitre.textContent = uneKholle.chapitre.innerText;
-        enonce.textContent = uneKholle.enonce.innerText;
+        //enonce.textContent = uneKholle.enonce.innerText;
+        enonceCorrection.textContent = uneKholle.enonce.innerText+" "+uneKholle.correction.innerText;
         commentaire.textContent = uneKholle.commentaire.innerText;
-        correction.textContent = uneKholle.correction.innerText;
+        //correction.textContent = uneKholle.correction.innerText;
 
-        item.append(filiere,matiere,chapitre,enonce,commentaire,correction);
+        item.append(filiere,matiere,chapitre,enonceCorrection,commentaire);
 
         if(uneKholle){
             /*const table = document.querySelector('.datatable tbody');*/
-            const table = document.querySelector('.content article');
+            const table = document.querySelector('.box tbody');
             console.log(item);
             console.log(table);
             table.appendChild(item);
