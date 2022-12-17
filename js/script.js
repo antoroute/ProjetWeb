@@ -73,7 +73,7 @@ function ajouter(){
         //const correction=document.createElement("td");
         const enonceCorrection=document.createElement("td");
 
-        filiere.textContent = uneKholle.filiere.innerText;
+        filiere.textContent = uneKholle.filiere;
         matiere.textContent = uneKholle.matiere.innerText;
         chapitre.textContent = uneKholle.chapitre.innerText;
         //enonce.textContent = uneKholle.enonce.innerText;
@@ -93,41 +93,95 @@ function ajouter(){
     })
 };
 
-function mettreDansJson(){
-    const kholle = document.forms.newKholle; 
+//affichage gallery depuis JSON
 
-    const filiereSaisi = kholle.elements.filiere.value;
-    const matiereSaisie = kholle.elements.matiere.value;
-    const chapitreSaisie = kholle.elements.chapitre.value;
-    const enonceSaisi = kholle.elements.enonce.value;
-    const commentaireSaisi = kholle.elements.commentaire.value;
-    const correctionSaisi = kholle.elements.correction.value;
-    //
-    // const myData = JSON.parse(readFileSync('../json/gallery.json','utf-8'));
-    // 
+var mesKhollesJson = [];
+
+function lectureJson(){
+    const kholle = document.forms.searchKholle; 
+
+    const filiereSaisi=document.createElement("td");
+    const matiereSaisie=document.createElement("td");
+    console.log(matiereSaisie);
+
+    filiereSaisi.textContent = kholle.elements.filiere.value;
+    matiereSaisie.textContent = kholle.elements.matiere.value;
+
     fetch("../json/gallery.json")
         .then(res=>res.json())
-        .then(data=> {    
-            console.log(data);
-            var myData = data;
-            
-            //console.log(myData);
-            const nouvelleKholle={"chapitre": chapitreSaisie,
-                                    "enonce":enonceSaisi,
-                                    "commentaire":commentaireSaisi,
-                                    "correction":correctionSaisi
-                                };
-            // const nouvelleKholleString = JSON.stringify(nouvelleKholle);
-            // console.log(typeof(nouvelleKholleString));
-            myData[filiereSaisi][matiereSaisie].push(nouvelleKholle);
-            // var newData = data.push(JSON.stringify(nouvelleKholle));
-            // console.log(newData);
-            console.log(myData);
-            console.log(myData[filiereSaisi][matiereSaisie][0].commentaire);
-            //filehandle.writeFile("../json/gallery.json",myData);
+        .then(data=> {  
+            data[filiereSaisi.textContent][matiereSaisie.textContent].forEach(kholle =>{
+                mesKhollesJson.push(kholle);
+            });
+            console.log(mesKhollesJson);
+            afficher();
         });
+    
 
 }
+
+
+function afficher(){
+    console.log(mesKhollesJson);
+    mesKhollesJson.forEach((uneKholle)=>{
+            console.log(uneKholle);
+
+            const item = document.createElement("tr");
+            const chapitre=document.createElement("td");
+            const commentaire=document.createElement("td");
+            const enonceCorrection=document.createElement("td");
+
+            chapitre.textContent = uneKholle.chapitre;
+            enonceCorrection.textContent = uneKholle.enonce+" "+uneKholle.correction;
+            commentaire.textContent = uneKholle.commentaire;
+
+            item.append(chapitre,enonceCorrection,commentaire);
+
+            if(uneKholle){
+                /*const table = document.querySelector('.datatable tbody');*/
+                const table = document.querySelector('.box tbody');
+                console.log(item);
+                console.log(table);
+                table.appendChild(item);
+            }
+    });
+}
+
+function supprimerGallery(){
+    /*const table = document.querySelector('.datatable tbody');*/
+    const table = document.querySelector('.box tbody');
+    while(table.firstChild){
+        table.firstChild.remove();
+    };
+    mesKhollesJson = [];
+    //console.log(table);
+}
+
+function affichageJson(){
+    supprimerGallery();
+    lectureJson();
+}
+// const kholle = document.forms.newKholle; 
+
+//     const filiereSaisi=document.createElement("td");
+//     const matiereSaisie=document.createElement("td");
+//     const chapitreSaisie=document.createElement("td");
+//     const enonceSaisi=document.createElement("td");
+//     const commentaireSaisi=document.createElement("td");
+//     const correctionSaisi=document.createElement("td");
+
+//     filiereSaisi.textContent = kholle.elements.filiere.value;
+//     matiereSaisie.textContent = kholle.elements.matiere.value;
+//     chapitreSaisie.textContent = kholle.elements.chapitre.value;
+//     enonceSaisi.textContent = kholle.elements.enonce.value;
+//     commentaireSaisi.textContent = kholle.elements.commentaire.value;
+//     correctionSaisi.textContent = kholle.elements.correction.value;
+
+//     const nouvelleKholle = new Kholle(filiereSaisi,matiereSaisie,chapitreSaisie,enonceSaisi,commentaireSaisi,correctionSaisi);
+//     console.log(nouvelleKholle)
+
+
+
 
 function test(){
     fetch("../json/gallery.json")
