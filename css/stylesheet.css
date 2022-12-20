@@ -90,7 +90,6 @@ ul.sous {
 /* Body */
 
 body {
-  /* préciser le margin parce que sinon par défaut ton navigateur va avoir un margin de 8 */
   margin: 0;
   color: #292f36;
   background-color: rgb(219, 218, 218);
@@ -118,15 +117,13 @@ aside {
   width: 120px;
 }
 
-p img {
-  max-width: 100%;
-}
 
 /* ----------------------------------------- */
 /*main*/
 main {
   position: relative;
   top: 4em;
+  margin-bottom: 50px;
   z-index: 0;
 }
 
@@ -190,6 +187,46 @@ main .box {
 .datatable tr:not(:last-child) td,
 .datatable th {
   border-bottom: 1px solid #ccc;
+}
+/*------------------------------------------ */
+/*about*/
+.about {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 2em;
+  gap: 0px 3em;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  grid-template-areas:". .";
+  justify-items: center;
+  width: 40em; 
+  
+}
+.about .coder{
+  text-align: center;
+  max-width: 70%;
+}
+.about .coder img{
+  max-width : 150px;
+  height : auto;
+}
+
+.about .coder .tache a{
+  display: block;
+  margin-bottom: 8px;
+  margin-left: 0.5em;
+  font-size: 20px;
+  text-align: start;
+}
+
+.about .coder .tache a::before {
+  position: relative;
+  content: "\f120";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 15px;
+  margin-right: 5px;
 }
 
 /* ----------------------------------------- */
