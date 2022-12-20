@@ -73,7 +73,7 @@ function ajouter(){
         //const correction=document.createElement("td");
         const enonceCorrection=document.createElement("td");
 
-        filiere.textContent = uneKholle.filiere;
+        filiere.textContent = uneKholle.filiere.innerText;
         matiere.textContent = uneKholle.matiere.innerText;
         chapitre.textContent = uneKholle.chapitre.innerText;
         //enonce.textContent = uneKholle.enonce.innerText;
