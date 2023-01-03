@@ -152,7 +152,7 @@ main section h1 {
 
 /* box gallery */
 main .box {
-  /*overflow-x: scroll;*/
+  overflow-x: scroll;
   flex-wrap: wrap;
   border: 1px;
   border-radius: 25px;
