@@ -1,73 +1,276 @@
 {
     "MPSI": {
-        "Mathématique": [
-            {"chapitre": "les sousanneux",
-            "enonce":"enonceSaisi",
-            "commentaire":"commentaireSaisi",
-            "correction":"correctionSaisi"
+        "Mathématiques": [{
+                "chapitre": "Calculs algébriques",
+                "enonce": "Télescopage",
+                "commentaire": "Le titre parle de lui-même",
+                "correction": ""
             },
-            {"chapitre": "je sais",
-            "enonce":"enonceSaisi",
-            "commentaire":"commentaireSaisi",
-            "correction":"correctionSaisi"
+            {
+                "chapitre": "Polynômes",
+                "enonce": "Polynômes de Tchebychev",
+                "commentaire": "La fin est difficile",
+                "correction": ""
             }
         ],
-        "Physique": [],
-        "Chimie": [],
-        "SI": []
+        "Physique": [{
+            "chapitre": "Thermodynamique",
+            "enonce": "Explosion d'un gaz",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Chimie": [{
+            "chapitre": "Avancement chimique",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "SI": [{
+            "chapitre": "Mécanique du solide",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }]
     },
     "PCSI": {
-        "Mathématique": [],
-        "Physique": [],
-        "Chimie": [],
-        "SI": []
+        "Mathématiques": [{
+            "chapitre": "Trigonométrie",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Physique": [{
+            "chapitre": "Mécanique",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Chimie": [{
+            "chapitre": "Atomes",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "SI": [{
+            "chapitre": "Mécanique du solide",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }]
     },
     "MPII": {
-        "Mathématique": [],
-        "Physique": [],
-        "Chimie": [],
-        "SI": []
+        "Mathématiques": [{
+            "chapitre": "Primitives",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Physique": [{
+            "chapitre": "Mécanique du point",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Chimie": [{
+            "chapitre": "Atomes et ions",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "SI": [{
+            "chapitre": "Mécanique du solide",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }]
     },
     "PTSI": {
-        "Mathématique": [],
-        "Physique": [],
-        "Chimie": [],
-        "SI": []
+        "Mathématiques": [{
+            "chapitre": "Systèmes linéaires",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Physique": [{
+            "chapitre": "Mécanique",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Chimie": [{
+            "chapitre": "Avancement chimique",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "SI": [{
+            "chapitre": "Mécanique du solide",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }]
     },
     "MP": {
-        "Mathématique": [],
-        "Physique": [],
-        "Chimie": [],
-        "SI": []
+        "Mathématiques": [{
+                "chapitre": "Réduction des endomorphismes",
+                "enonce": "enonceSaisi",
+                "commentaire": "commentaire",
+                "correction": "correction"
+            },
+            {
+                "chapitre": "Intégrales impropres et fonctions intégrales",
+                "enonce": "enonceSaisi",
+                "commentaire": "commentaire",
+                "correction": "correction"
+            }
+        ],
+        "Physique": [{
+            "chapitre": "Électromagnétisme",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Chimie": [{
+            "chapitre": "Potentiel-PH",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "SI": [{
+            "chapitre": "Mécanique du solide",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }]
     },
     "MPI": {
-        "Mathématique": [],
-        "Physique": [],
-        "Chimie": [],
-        "SI": []
+        "Mathématiques": [{
+            "chapitre": "Espaces vectoriels normés",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Physique": [{
+            "chapitre": "Mécanique",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Chimie": [{
+            "chapitre": "Atomes",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "SI": [{
+            "chapitre": "Mécanique du solide",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }]
     },
     "PC": {
-        "Mathématique": [],
-        "Physique": [],
-        "Chimie": [],
-        "SI": []
+        "Mathématiques": [{
+            "chapitre": "Suites et séries de fonctions",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Physique": [{
+            "chapitre": "Électromagnétisme",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Chimie": [{
+            "chapitre": "Molécules",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "SI": [{
+            "chapitre": "Mécanique du solide",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }]
     },
     "PSI": {
-        "Mathématique": [],
-        "Physique": [],
-        "Chimie": [],
-        "SI": []
+        "Mathématiques": [{
+            "chapitre": "Suites et séries de fonctions",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Physique": [{
+            "chapitre": "Ondes",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Chimie": [{
+            "chapitre": "Atomes et ions",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "SI": [{
+            "chapitre": "Mécanique du solide",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }]
     },
     "PT": {
-        "Mathématique": [],
-        "Physique": [],
-        "Chimie": [],
-        "SI": []
+        "Mathématiques": [{
+            "chapitre": "Réduction des endomorphismes",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Physique": [{
+            "chapitre": "Mécanique",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Chimie": [{
+            "chapitre": "Atomes",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "SI": [{
+            "chapitre": "Mécanique du solide",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }]
     },
     "TSI": {
-        "Mathématique": [],
-        "Physique": [],
-        "Chimie": [],
-        "SI": []
+        "Mathématiques": [{
+            "chapitre": "Suites et séries de fonctions",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Physique": [{
+            "chapitre": "Magnétisme",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "Chimie": [{
+            "chapitre": "Atomes",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }],
+        "SI": [{
+            "chapitre": "Mécanique du solide",
+            "enonce": "enonceSaisi",
+            "commentaire": "commentaire",
+            "correction": "correction"
+        }]
     }
 }
