@@ -229,6 +229,30 @@ main .box {
   margin-right: 5px;
 }
 
+.coder .social {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.coder .social a {
+  display: inline-block;
+}
+
+.coder .social a i {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #0085ff;
+}
+
+.coder .social a:last-child i {
+  margin: 0;
+}
+
+.coder .social a:hover i {
+  color: #000000;
+}
+
 /* ----------------------------------------- */
 
 /* footer */
@@ -333,6 +357,7 @@ main .box {
 .footer .footer-about h3 {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: auto;
 }
 

@@ -6,7 +6,6 @@
     <title> Khôlle share </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="../js/script.js"></script>
-    <script src="../json/gallery.json"></script>
     <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/a7e75cea4f.js" crossorigin="anonymous"></script>
 </head>
@@ -32,76 +31,44 @@
     </header>
 
     <main>
-        <section>
-            <h1>
-                Ajouter Khôlle
-            </h1>
+        <section class="about">
+            <div class="coder">
+                <h2>Antonin HERVE</h2>
+                <div class="contact">
+                    <p><i class="fa fa-map-marker-alt"></i>Efrei, 30 Av. de la République, 94800 Villejuif</p>
+                    <p><i class="fa fa-phone-alt"></i>07 60 18 11 50</p>
+                    <p><i class="fa fa-envelope"></i>antonin.herve@efrei.net</p>
+                    <div class="social">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/antonin-herve-879199251/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="coder">
+                <h2>Rémi GAZQUEZ</h2>
+                <div class="contact">
+                    <p><i class="fa fa-map-marker-alt"></i>Efrei, 30 Av. de la République, 94800 Villejuif</p>
+                    <p><i class="fa fa-phone-alt"></i>07 51 35 84 90</p>
+                    <p><i class="fa fa-envelope"></i>remi.gazquez@efrei.net</p>
+                    <div class="social">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/r%C3%A9mi-gazquez-bb3981244/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <form method="post" name="newKholle" class="boxKholle" id="newKholle" onsubmit="return false">
-                <ul><strong>Filière : </strong>
-                    <select name="filiere" size=1>
-                        <option>MPSI</option>
-                        <option>PCSI</option>
-                        <option>MPII</option>
-                        <option>PTSI</option>
-                        <option>MP</option>
-                        <option>MPI</option>
-                        <option>PC</option>
-                        <option>PSI</option>
-                        <option>PT</option>
-                        <option>TSI</option>
-                    </select>
-                </ul>
-
-                <ul><strong>Matiere :</strong>
-                    <select name="matiere" size=1>
-                        <option>Mathématique</option>
-                        <option>Physique</option>
-                        <option>Chimie</option>
-                        <option>SI</option>
-                    </select>
-                </ul>
-
-                <ul><strong>Chapitre :</strong>
-                    <input type="text" id="chapitre" name="chapitre" size="25" placeholder="Nom du Chapitre" required>
-                </ul>
-                <ul><strong>Enoncé :</strong>
-                    <input type="file" id="enonce" name="enonce" size="25" accept="image/*,.pdf" required>
-                </ul>
-                <ul><strong>Commentaire :</strong>
-                    <input type="text" id="commentaire" name="commentaire" size="25"
-                        placeholder="Commentaire de l'examinateur">
-                </ul>
-                <ul><strong>Correction :</strong>
-                    <input type="file" id="correction" name="correction" size="25" accept="image/*,.pdf" multiple>
-                </ul>
-                <ul>
-                    <button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
-                </ul>
-            </form>
-
-        </section>
-
-        <div class="box">
-            <table class="datatable">
-                <thead>
-                    <tr>
-                        <th>Filière</th>
-                        <th>Matiere</th>
-                        <th>Chapitre</th>
-                        <th>Enoncé & Correction</th>
-                        <th>Commentaire</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-        </div>
-
-
     </main>
+
     <footer>
         <div class="footer">
             <div class="container">
